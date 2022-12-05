@@ -1,2 +1,7 @@
 # Organ-Transplantation
- DBMS project using sql,python,html
+ DBMS MINI PROJECT
+
+ LANGUAGE USED-SQL,PYTHON,HTML
+
+ PIP INSTALL FLASK
+ PIP INSTALL SQL-CONNECT-PYTHON
