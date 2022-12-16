@@ -1,24 +1,68 @@
 <!DOCTYPE html>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
 <html>
 	<head>
 		<title>Login Page</title>
+	<style type="text/css">
+		.first {
+			background-color:black;
+			padding:4px;
+			font-size:10;
+			color:orange;
+			font-family:Segoe UI Black;
+			box-shadow:3px 3px 10px red;
+		}
+			.second{
+				background-color:orange;
+				padding:4px;
+				box-shadow:3px 3px 10px red;
+				border:3px solid black;
+			}
+			body{
+				background:skyblue;
+				color:black;
+				
+			}
+			img{
+				border:3px solid black;
+				box-shadow:3px 3px 10px red;
+			}
+			.card{
+				width:7%;
+				margin:10px;
+				border-radius:5x;
+				box-shadow:3px 3px 10px red;
+			}
+			
+		</style>
 	</head>
 	<body>
 		<div class="jumbotron">
-					<center><h1 class="display-4">Organ Donation and Procurement Management System</h1></center>
+					<center><h1 class="first">Organ Donation and Procurement Management System</h1></center>
+		
 		</div>
 		<form class="container" action = "/login" method = "POST">
 				<div class="form-group">
-					<label>Username</label>
-					<input name = "username" type="text" class="form-control" id="inputUsername" aria-describedby="emailHelp" placeholder="Enter username">
+					<label><font size="4"face="arial"color="black">Username</label>
+					<input name = "username" type="text" class="second" id="inputUsername" aria-describedby="emailHelp" placeholder="Enter username">
 				</div>
 				<div class="form-group">
-					<label>Password</label>
-					<input name = "password" type="password" class="form-control" id="inputPassword" placeholder="Password">
+					<label><font size="4"face="arial"color="black">Password</label>
+					<input name = "password" type="password" class="second" id="inputPassword" placeholder="Password" >
 				</div>
-				<button type="submit" class="btn btn-primary">Submit</button>
+				<button type="submit" class="card">Submit</button>
 		</form>
+			<center>
+		
+		<figure>
+			<img src="file:///D:/Nithin/Projects/Organ-Transplantation-Network-master/static/loginpage.png"
+			alt="loginpage"
+			style="width:50%">
+			
+		</figure>
+				
+			<center>
+				
 	</body>
+
 </html>

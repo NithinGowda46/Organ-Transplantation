@@ -11,6 +11,41 @@
 
 <head>
 	<title>Delete Patient</title>
+	<style type="text/css">
+		.first {
+			background-color:black;
+			padding:4px;
+			font-size:10;
+			color:orange;
+			font-family:Segoe UI Black;
+			box-shadow:3px 3px 10px red;
+		}
+		body{
+			background:skyblue;
+			color:black;
+			
+		}
+		.table{
+			border:5px solid black;
+			border-collapse:collapse;
+			background-color:white;
+			box-shadow:3px 3px 10px red;
+			
+		}
+		.card{
+			width:11%;
+			margin:10px;
+			border-radius:5x;
+			box-shadow:3px 3px 10px red;
+		}
+		.second{
+			background-color:orange;
+			padding:4px;
+			box-shadow:3px 3px 10px red;
+			border:3px solid black;
+		}
+	   
+	</style>
 </head>
 
 <body>
@@ -19,25 +54,25 @@
 			<button style="border: 0px solid transparent;" class="btn btn-outline-primary">HOME</button>
 		</form>
 		<form class="form-inline" action="/logout">
-			<label style="color:white; padding-right: 10px">Hi {{session.get('username')}}!</label>
+			<label style="color:white; padding-right: 10px">Nithin & Nanda</label>
 			<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Logout</button>
 		</form>
 	</nav>
 	<div class="jumbotron">
 		<center>
-			<h1 class="display-4">Organ Donation and Procurement Management System</h1>
+			<h1 class="first">Organ Donation and Procurement Management System</h1>
 		</center>
 	</div>
 	<form action="/del_patient" method="POST" class="container">
 		<div class="form-group">
 			<label>Patient ID</label>
-			<input type="number" name="Patient_ID" class="form-control">
+			<input type="number" name="Patient_ID" class="second">
 		</div>
 		<div class="form-group">
-			<label>Organ Required by the Patient</label>
-			<input type="text" name="organ_req" class="form-control">
+			<label>Organ Required</label>
+			<input type="text" name="organ_req" class="second">
 		</div>
-		<button class="btn btn-primary" type="submit" style="width:24%;" name="delete">Delete Patient</button>
+		<button class="card" type="submit" ;" name="delete">Delete Patient</button>
 	</form>
 </body>
 

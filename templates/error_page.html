@@ -7,18 +7,41 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 <html>
     <title>Error</title>
+    <style type="text/css">
+        .first {
+            background-color:black;
+            padding:4px;
+            font-size:10;
+            color:orange;
+            font-family:Segoe UI Black;
+            box-shadow:3px 3px 10px red;
+        }
+        body{
+            background:skyblue;
+            color:black;
+            
+        }
+        .table{
+            border:5px solid black;
+            border-collapse:collapse;
+            background-color:white;
+            box-shadow:3px 3px 10px red;
+            
+        }
+       
+    </style>
     <body>
         <nav class="navbar navbar-dark bg-dark justify-content-between">
             <form action = "/home">
                 <button style = "border: 0px solid transparent;" class = "btn btn-outline-primary">HOME</button>
             </form>
             <form class="form-inline" action = "/logout">
-                <label style="color:white; padding-right: 10px" >Hi {{session.get('username')}}!</label>
+                <label style="color:white; padding-right: 10px" >Nithin & Nanda</label>
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Logout</button>
             </form>
         </nav>
         <div class="jumbotron">
-            <center><h1 class="display-4">Organ Procurement and Donation Management System</h1></center>
+            <center><h1 class="first">Organ Procurement and Donation Management System</h1></center>
         </div>
         <center>
           <h4> Error ! <h4>

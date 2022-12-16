@@ -10,26 +10,60 @@
 
 <head>
 	<title>Login Page</title>
+	<style type="text/css">
+		.first {
+			background-color:black;
+			padding:4px;
+			font-size:10;
+			color:orange;
+			font-family:Segoe UI Black;
+			box-shadow:3px 3px 10px red;
+		}
+	
+	.card-header{
+		background-color:black;
+		padding:2px;
+	}
+	.card-body{
+		background-color:black;
+		padding:2px;
+	}
+	.card{
+		width:30%;
+		margin:10px;
+		border-radius:5x;
+		box-shadow:3px 3px 10px red;
+	}
+	body{
+		background:skyblue;
+		color:black;
+	}
+	
+	
+	</style>
 </head>
 
-<body>
+	<body>
+	
 	<nav class="navbar navbar-dark bg-dark justify-content-between">
 		<form action="/home">
 			<button style="border: 0px solid transparent;" class="btn btn-outline-primary">HOME</button>
 		</form>
 		<form class="form-inline" action="/logout">
-			<label style="color:white; padding-right: 10px">Hi {{session.get('username')}}!</label>
+			<label style="color:white; padding-right: 10px">Nithin & Nanda</label>
 			<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Logout</button>
 		</form>
 	</nav>
 	<div class="jumbotron">
 		<center>
-			<h1 class="display-4">Organ Donation and Procurement Management System</h1>
+			<h1 class="first">Organ Donation and Procurement Management System</h1>
 		</center>
 	</div>
 
 	<div id="accordion">
+		<center>
 		<div class="card">
+			<center>
 			<div class="card-header" id="headingOne" data-toggle="collapse" data-target="#collapseOne">
 				<h5 class="mb-0">
 					<button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -42,15 +76,17 @@
 					<center>
 						<div>
 							<form action="/search_detail" method="POST">
-								<button class="btn btn-primary" style="width: 25%;" type="submit">View/Update/Delete User Details</button>
+								<button class="btn btn-link" font size="5" color="black"; type="submit">View/Update/Delete User Details</button>
 							</form>
 						</div>
 					</center>
-					<br>
+					
 				</div>
 			</div>
 		</div>
+		
 		<div class="card">
+			
 			<div class="card-header" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo">
 				<h5 class="mb-0">
 					<button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
@@ -64,75 +100,76 @@
 					<center>
 						<div>
 							<form action="/search_User_details" method="POST">
-								<button class="btn btn-primary" style="width: 25%;" type="submit">Search User by Details</button>
+								<button class="btn btn-link" font size="5" color="black"; type="submit">Search User by Details</button>
 							</form>
 						</div>
 					</center>
-					<br>
+					
 					<center>
 						<div>
 							<form action="/search_Patient_details" method="POST">
-								<button class="btn btn-primary" style="width: 25%;" type="submit">Search Patient by Details</button>
+								<button class="btn btn-link" font size="5" color="black"; type="submit">Search Patient by Details</button>
 							</form>
 						</div>
 					</center>
-					<br>
+					
 					<center>
 						<div>
 							<form action="/search_Donor_details" method="POST">
-								<button class="btn btn-primary" style="width: 25%;" type="submit">Search Donor by Details</button>
+								<button class="btn btn-link" font size="5" color="black"; type="submit">Search Donor by Details</button>
 							</form>
 						</div>
 					</center>
-					<br>
+					
           <center>
 						<div>
 							<form action="/search_Organ_details" method="POST">
-								<button class="btn btn-primary" style="width: 25%;" type="submit">Search Organ by Details</button>
+								<button class="btn btn-link" font size="5" color="black"; type="submit">Search Organ by Details</button>
 							</form>
 						</div>
 					</center>
-					<br>
+					
 					<center>
 						<div>
 							<form action="/search_Organization_details" method="POST">
-								<button class="btn btn-primary" style="width: 25%;" type="submit">Search Organization by Details</button>
+								<button class="btn btn-link" font size="5" color="black"; type="submit">Search Organization by Details</button>
 							</form>
+							
 						</div>
 					</center>
-					<br>
+					
 					<center>
 						<div>
 							<form action="/search_Organization_head_details" method="POST">
-								<button class="btn btn-primary" style="width: 25%;" type="submit">Search Organization Head by Details</button>
+								<button class="btn btn-link" font size="5" color="black"; type="submit">Search Organization Head by Details</button>
 							</form>
 						</div>
 					</center>
-					<br>
+					
 					<center>
 						<div>
 							<form action="/search_Doctor_details" method="POST">
-								<button class="btn btn-primary" style="width: 25%;" type="submit">Search Doctor Details</button>
+								<button class="btn btn-link" font size="5" color="black";type="submit">Search Doctor Details</button>
 							</form>
 						</div>
 					</center>
-					<br>
+					
           <center>
 						<div>
 							<form action="/search_Transaction" method="POST">
-								<button class="btn btn-primary" style="width: 25%;" type="submit">Search Transaction Details</button>
+								<button class="btn btn-link" font size="5" color="black"; type="submit">Search Transaction Details</button>
 							</form>
 						</div>
 					</center>
-					<br>
+					
           <center>
 						<div>
 							<form action="/search_log" method="POST">
-								<button class="btn btn-primary" style="width: 25%;" type="submit">Search Log Details</button>
+								<button class="btn btn-link" font size="5" color="black"; type="submit">Search Log Details</button>
 							</form>
 						</div>
 					</center>
-					<br>
+					
 				</div>
 			</div>
 		</div>
@@ -150,97 +187,96 @@
 					<center>
 						<div>
 							<form action="/add_User_page" method="POST">
-								<button class="btn btn-primary" style="width:25%" type="submit">Add User</button>
+								<button class="btn btn-link" font size="5" color="black"; type="submit">Add User</button>
 							</form>
 						</div>
 					</center>
-					<br>
+					
           <center>
 						<div>
 							<form action="/add_User_phone_no_page" method="POST">
-								<button class="btn btn-primary" style="width:25%" type="submit">Add User Phone Number</button>
+								<button class="btn btn-link" font size="5" color="black"; type="submit">Add User Phone Number</button>
 							</form>
 						</div>
 					</center>
-					<br>
+					
 					<center>
 						<div>
 							<form action="/add_Patient_page" method="POST">
-								<button class="btn btn-primary" style="width:25%" type="submit">Add Patient</button>
+								<button class="btn btn-link" font size="5" color="black"; type="submit">Add Patient</button>
 							</form>
 						</div>
 					</center>
-					<br>
+					
 					<center>
 						<div>
 							<form action="/add_Donor_page" method="POST">
-                <button class="btn btn-primary" style="width:25%" type="submit">Add Donor</button>
+                <button class="btn btn-link" font size="5" color="black"; type="submit">Add Donor</button>
               </form>
             </div>
 					</center>
-					<!-- <br>
+					
 					<center>
 						<div>
 							<form action="/add_Organ_available_page" method="POST">
-								<button class="btn btn-primary" style="width:25%" type="submit">Add Organ</button>
+								<button class="btn btn-link" font size="5" color="black"; type="submit">Add Organ</button>
 							</form>
 						</div>
-					</center> -->
-					<br>
+					</center> 
+					
           <center>
             <div>
               <form action="/add_Doctor_page" method="POST">
-                <button class="btn btn-primary" style="width:25%" type="submit">Add Doctor</button>
+                <button class="btn btn-link" font size="5" color="black"; type="submit">Add Doctor</button>
               </form>
             </div>
           </center>
-          <br>
+          
           <center>
             <div>
               <form action="/add_Doctor_phone_no_page" method="POST">
-                <button class="btn btn-primary" style="width:25%" type="submit">Add Doctor Phone Number</button>
+                <button class="btn btn-link" font size="5" color="black"; type="submit">Add Doctor Phone Number</button>
               </form>
             </div>
           </center>
-          <br>
+          
           <center>
 						<div>
 							<form action="/add_Organization_page" method="POST">
-								<button class="btn btn-primary" style="width:25%" type="submit">Add Organization</button>
+								<button class="btn btn-link" font size="5" color="black"; type="submit">Add Organization</button>
 							</form>
 						</div>
 					</center>
-					<br>
+					
           <center>
 						<div>
 							<form action="/add_Organization_phone_no_page" method="POST">
-								<button class="btn btn-primary" style="width:25%" type="submit">Add Organization Phone Number</button>
+								<button class="btn btn-link" font size="5" color="black"; type="submit">Add Organization Phone Number</button>
 							</form>
 						</div>
 					</center>
-					<br>
+					
           <center>
 						<div>
 							<form action="/add_Organization_head_page" method="POST">
-								<button class="btn btn-primary" style="width:25%" type="submit">Add Organization Head</button>
+								<button class="btn btn-link" font size="5" color="black"; type="submit">Add Organization Head</button>
 							</form>
 						</div>
 					</center>
-          <br>
+          
           <center>
 						<div>
 							<form action="/add_Transaction_page" method="POST">
-								<button class="btn btn-primary" style="width:25%" type="submit">Add Transaction</button>
+								<button class="btn btn-link" font size="5" color="black"; type="submit">Add Transaction</button>
 							</form>
 						</div>
 					</center>
-					<br>
-					<br>
+					
 				</div>
 			</div>
 		</div>
     <div class='card'>
-      <div class="card-header" id="headingFour" data-toggle="collapse" data-target="#collapseFour">
+      <div class="card-header" id="headingfour" data-toggle="collapse" data-target="#collapseFour">
 				<h5 class="mb-0">
 					<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
 					 aria-controls="collapseFour">
@@ -253,38 +289,54 @@
 					<center>
 						<div>
 							<form action="/update_user_page" method="POST">
-								<button class="btn btn-primary" style="width: 25%;" type="submit">Update User</button>
+								<button class="btn btn-link" font size="5" color="black"; type="submit">Update User</button>
 							</form>
 						</div>
 					</center>
-					<br>``
+					
           <center>
 						<div>
 							<form action="/update_doctor_page" method="POST">
-								<button class="btn btn-primary" style="width: 25%;" type="submit">Update Doctor</button>
+								<button class="btn btn-link" font size="5" color="black"; type="submit">Update Doctor</button>
 							</form>
 						</div>
 					</center>
-					<br>
+					
           <center>
 						<div>
 							<form action="/update_organization_page" method="POST">
-								<button class="btn btn-primary" style="width: 25%;" type="submit">Update Organization</button>
+								<button class="btn btn-link" font size="5" color="black"; type="submit">Update Organization</button>
+							</form>
+							
+						</div>
+					</center>
+					
+          <center>
+			<div>
+							<form action="/update_donor_page" method="POST">
+								<button class="btn btn-link" font size="5" color="black"; type="submit">Update donor</button>
+							</form>
+							
+							<form action="/update_patient_page" method="POST">
+								<button class="btn btn-link" font size="5" color="black"; type="submit">Update patient</button>
 							</form>
 						</div>
 					</center>
-					<!-- <br>
-          <center>
-						<div>
-							<form action="/update_organization_head_page" method="POST">
-								<button class="btn btn-primary" style="width: 25%;" type="submit">Update Organization Head</button>
-							</form>
-						</div>
-					</center> -->
-					<br>
+					
+						
+					</center> 
+					<div>
+						<center>
+						
+						<center>
+					</div>
+				</center>
+				
+					
+			<center>
         </div>
       </div>
-    </div>
+    </div><center>
 		<div class="card">
 			<div class="card-header" id="headingFive" data-toggle="collapse" data-target="#collapseFive">
 				<h5 class="mb-0">
@@ -293,83 +345,72 @@
 						<strong>Remove </strong>
 					</button>
 				</h5>
+				<center>
 			</div>
 			<div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
 				<div class="card-body">
 					<center>
 						<div>
 							<form action="/remove_user" method="POST">
-								<button class="btn btn-primary" style="width: 25%;" type="submit">Remove User</button>
+								<button class="btn btn-link" font size="5" color="black"; type="submit">Remove User</button>
 							</form>
 						</div>
 					</center>
-					<br>
+					
 					<center>
 						<div>
 							<form action="/remove_patient" method="POST">
-								<button class="btn btn-primary" style="width: 25%;" type="submit">Remove Patient</button>
+								<button class="btn btn-link" font size="5" color="black"; type="submit">Remove Patient</button>
 							</form>
 						</div>
 					</center>
-					<br>
+					
 					<center>
 						<div>
 							<form action="/remove_donor" method="POST">
-								<button class="btn btn-primary" style="width: 25%;" type="submit">Remove Donor</button>
+								<button class="btn btn-link" font size="5" color="black"; type="submit">Remove Donor</button>
 							</form>
 						</div>
 					</center>
-					<br>
+					
 					<center>
 						<div>
 							<form action="/remove_doctor" method="POST">
-								<button class="btn btn-primary" style="width: 25%;" type="submit">Remove Doctor</button>
+								<button class="btn btn-link" font size="5" color="black"; type="submit">Remove Doctor</button>
 							</form>
 						</div>
 					</center>
-					<br>
+					
           <center>
             <div>
               <form action="/remove_organization" method="POST">
-                <button class="btn btn-primary" style="width: 25%;" type="submit">Remove Organization</button>
+                <button class="btn btn-link" font size="5" color="black"; type="submit">Remove Organization</button>
               </form>
             </div>
           </center>
-          <br>
+          
           <center>
             <div>
               <form action="/remove_organization_head" method="POST">
-                <button class="btn btn-primary" style="width: 25%;" type="submit">Remove Organization Head</button>
+                <button class="btn btn-link" font size="5" color="black"; type="submit">Remove Organization Head</button>
               </form>
             </div>
           </center>
-          <br>
+          
+		  <center>
+		  
 				</div>
 			</div>
 		</div>
-  <div class="card">
-    <div class="card-header" id="headingSix" data-toggle="collapse" data-target="#collapseSix">
-      <h5 class="mb-0">
-        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false"
-         aria-controls="collapseSix">
-          <strong>Statistics </strong>
-        </button>
-      </h5>
-    </div>
-    <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
-      <div class="card-body">
-        <center>
-          <div>
-            <form action="/statistics" method="POST">
-              <button class="btn btn-primary" style="width: 25%;" type="submit">Statistics</button>
-            </form>
+  
           </div>
         </center>
-        <br>
+        
       </div>
     </div>
   </div>
 </div>
+
 </body>
 
 </html>
